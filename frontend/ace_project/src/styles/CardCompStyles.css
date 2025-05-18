@@ -1,0 +1,88 @@
+.uaap-main-container{
+    height: 50vh;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 132, 1, 0.952);
+
+}
+
+.btn-card-comp{
+    border: 2px solid rgba(255, 132, 1, 0.952);
+
+}
+.uaap-outer-container{
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(235, 131, 57);
+    height: 35vh;
+    width: 15vw;
+    border-radius: 20px;
+
+    background-color: #f4f5f9;
+    box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
+
+
+    /* code ref:https://codepen.io/zwattic/pen/mKGRYm; */
+   /* animation */
+    transform-origin: center center 0px;
+    transition: all 0.5s ease-out;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+    z-index: 1;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uaap-outer-container:hover{
+    animation: unset; 
+    /* margin-top: 18vh; */
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(-10px);
+}
+
+
+
+
+.uaap-inner-container{
+    /* z-index: 2; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 2px solid rgb(235, 131, 57);
+
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.uaap-inner-container h4{
+    margin: 5px;
+    /* border: 2px solid rgb(0, 55, 255); */
+
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+
+.credit a{
+    font-size: 8px;
+    text-decoration: none;
+    color: grey;
+}
+
+.credit a:hover{
+   
+    color: rgb(255, 123, 46);
+}
+
