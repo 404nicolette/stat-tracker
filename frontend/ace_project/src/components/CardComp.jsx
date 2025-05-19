@@ -11,6 +11,7 @@ const CardComp = ({ title, logoSrc, authSrc, authSrcName, linkSrc, linkSrcName,r
   };
   
   
+  
   return (
     <>
 
@@ -23,12 +24,14 @@ const CardComp = ({ title, logoSrc, authSrc, authSrcName, linkSrc, linkSrcName,r
             <h4>{title}</h4> 
             <img src={logoSrc} alt={`${title} Logo`} width="150" height="150" /> 
             
-            <div className="credit">
-                
+            <div className="credit">       
               <a href={authSrc} target="_blank" rel="noopener noreferrer">{authSrcName} </a>
-              <a href={linkSrc} target="_blank" rel="noopener noreferrer">{linkSrcName}</a>
-                
+              <a href={linkSrc} target="_blank" rel="noopener noreferrer">{linkSrcName}</a>   
             </div>
+
+
+            <h4>{title}</h4> 
+
           </div>
         </div>
       </div>

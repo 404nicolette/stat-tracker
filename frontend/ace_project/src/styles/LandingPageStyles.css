@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     /* background-color: #16181b; */
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 
@@ -59,7 +59,7 @@
     color: rgb(235, 235, 235);
     font-weight: 400;
 
-    border: 2px solid rgb(235, 131, 57);
+    /* border: 2px solid rgb(227, 150, 95); */
     margin: 5px;
     padding: 5px;
 }
@@ -71,7 +71,7 @@
     width: 30vw;
     height: 20vh;
     position: relative; 
-    border: 5px solid rgb(235, 131, 57);
+    border: 2px solid rgb(235, 131, 57);
     overflow: hidden; 
 }
 
@@ -81,32 +81,39 @@
 
 
 /* dotted line for the net */
+.court-main{
+    position: relative; /* Set position to relative */
+   
+ 
+}
 .net {
     position: absolute;
-    top: 42%; 
+    top: 4%; 
     left: 50%;
     width: 2px;
-    height: 22%; 
+    height: 93%; 
     border-left: 2px dotted rgb(235, 131, 57);
     transform: translateX(-50%);
+    /* z-index: 0; */
 }
 
 .backline-right {
     position: absolute;
-    top: 42%; 
-    left: 55%; 
+    top: 4%; 
+    left: 65%; 
     width: 2px;
-    height: 22%;
+    height: 93%;
     border-left: 2px solid rgb(235, 131, 57);
     transform: translateX(-50%);
 }
 
 .backline-left {
     position: absolute;
-    top: 42%;
-    left: 45%;
+    top: 4%;
+    right: 65%;
     width: 2px;
-    height: 22%; 
+    height: 93%; 
     border-left: 2px solid rgb(235, 131, 57);
     transform: translateX(-50%);
 }
+

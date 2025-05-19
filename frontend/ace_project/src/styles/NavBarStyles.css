@@ -1,0 +1,46 @@
+.nav-bar-main-container {
+    position: fixed; 
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 40vw;
+    overflow: hidden; 
+    /* padding: 10px;  */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+    background: #262a2f; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 100px #16181b;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+.topnav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    /* padding: 5px; */
+}
+
+.topnav a {
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none; 
+    font-size: 18px; 
+    font-family: sans-serif; 
+    font-weight: 500; 
+    color: rgb(235, 131, 57); 
+    
+}
+
+.topnav a:hover {    
+    color: rgb(253, 107, 2);
+}
+
+.topnav a.active {
+  color: white; 
+  background-color: rgb(180, 115, 69); 
+}

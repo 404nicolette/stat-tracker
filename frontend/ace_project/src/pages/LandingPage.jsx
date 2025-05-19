@@ -3,6 +3,7 @@ import clubs from '../assets/clubs.svg';
 import diamond from '../assets/diamond.svg'; 
 
 import UAAPComp from "../components/CardComp"
+import NavBar from "../components/NavBar"
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,8 @@ const LandingPage = () => {
     <div>
         <div className="landing-page-main-container">
 
+          <NavBar />
+          
           {/* FIRST PAGE */}
           <div className="page first-page">
             <h2>for the data junkies</h2>
