@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* .all-teams-comp-main-container{ */
+    /* border: 3px solid rgb(26, 28, 31); */
+    /* height: 55vh;
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#all-team-bg-dlsu{
+    background: rgb(235, 131, 57);
+} */
+
+.all-teams-comp-outer-container{
+    /* border: 3px solid rgb(26, 28, 31); */
+    height: 35vh;
+    width: 15vw;
+    border-radius: 20px;
+
+    padding: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f9;
+
+    box-shadow: 0 10px 40px 2px rgba(0,0,0,0.4);
+
+
+   
+}
+
+.all-teams-comp-inner-container{
+    /* border: 3px solid rgb(26, 28, 31); */
+    height: 35vh;
+    width: 15vw;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+.all-teams-comp-inner-container h1{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.all-teams-credit a{
+    font-size: 8px;
+    text-decoration: none;
+    color: grey;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.all-teams-credit a:hover{
+    color: rgb(255, 123, 46);
+}
+
+
+
+
+
+
+#all-team-border-dlsu{
+    border: 5px solid green;
+}
+
+
+#all-team-border-nu{
+    border: 5px solid rgb(0, 15, 128);
+}
+
+#all-team-border-ust{
+    border: 5px solid rgb(214, 198, 26);
+}
+
+#all-team-border-feu{
+    border: 5px solid rgb(119, 188, 95);
+}
+
+#all-team-border-up{
+    border: 5px solid rgb(119, 10, 10);
+}
+
+#all-team-border-adu{
+    border: 5px solid rgb(108, 178, 213);
+}
+
+#all-team-border-admu{
+    border: 5px solid rgb(30, 68, 129);
+}
+
+#all-team-border-ue{
+    border: 5px solid rgb(206, 37, 37);
+}

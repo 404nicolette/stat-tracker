@@ -1,0 +1,20 @@
+.all-teams-main-container{
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+    background-color: #16181b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.all-teams-inner-container{
+    border: 2px solid rgb(0, 4, 255);
+    height: 100vh;
+    width: 100vw;
+
+    padding: 10px;
+
+}
