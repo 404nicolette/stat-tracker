@@ -14,7 +14,7 @@ const LandingPage = () => {
           <NavBar />
           
           {/* FIRST PAGE */}
-          <div className="page first-page">
+          <div id="home" className="page first-page">
             <h2>for the data junkies</h2>
             <div className="court-main">   
               <h1>ace</h1>
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
 
           {/* SECOND PAGE */}
-          <div className="page second-page">  
+          <div id="tournaments" className="page second-page">  
             
                    
             <div className="landing-page-left-container">
@@ -36,14 +36,14 @@ const LandingPage = () => {
               <UAAPComp title="UAAP" logoSrc={clubs} authSrc={"https://iconscout.com/icons/club"} 
                 authSrcName={"Clubs by "} linkSrc={"https://iconscout.com/contributors/phosphoricons"} 
                 linkSrcName={"Philosopher Icon"}
-                redirectTo={"#"} />
+                redirectTo={"/tournament/ssl"} />
 
 
 
               <UAAPComp title="SSL" logoSrc={diamond}  authSrc={"https://iconscout.com/icons/diamond"} 
               authSrcName={"Diamonds by "} linkSrc={"https://iconscout.com/contributors/phosphoricons"} 
               linkSrcName={"Philosopher Icon"}
-              redirectTo={"#"} />
+              redirectTo={"/tournament/uaap"} />
             </div>
           </div>
          
