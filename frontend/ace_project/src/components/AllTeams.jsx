@@ -3,15 +3,15 @@ import "../styles/AllTeamsStyles.css"
 
 
 
-const AllTeams = ({schoolName, teamName, teamLogo, authTeamSrc, authTeamSrcName, linkTeamSrc, linkSrcTeamName, borderStyle, bgColour}) => {
+const AllTeams = ({schoolName, teamName, teamLogo, authTeamSrc, authTeamSrcName, linkTeamSrc, linkSrcTeamName, borderStyle, teamColor}) => {
   
   
   
   return (
     <>
-    <div className='all-teams-comp-main-container' id={bgColour}>
+    <div className='all-teams-comp-main-container'>
 
-        <div className='all-teams-comp-outer-container'>
+        <div className='all-teams-comp-outer-container' style={{ '--team-color': teamColor }}>
             <div className='all-teams-comp-inner-container' id={borderStyle}>
                 <h1>{schoolName}</h1>
 

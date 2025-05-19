@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .all-teams-main-container{
-    border: 2px solid red;
-    height: 100vh;
-    width: 100vw;
+    /* border: 2px solid red; */
+    /* height: 100vh; */
+    /* width: 100vw; */
     background-color: #16181b;
 
     display: flex;
@@ -10,11 +12,33 @@
     flex-direction: column;
 }
 
+
+
+  
+.all-teams-outer-container h1{
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    color: rgb(251, 251, 251);
+
+    margin-top: 3rem;
+    /* letter-spacing: 0.em; */
+}
+
 .all-teams-inner-container{
-    border: 2px solid rgb(0, 4, 255);
+    /* border: 2px solid rgb(0, 4, 255); */
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
 
     padding: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px; 
 
 }
