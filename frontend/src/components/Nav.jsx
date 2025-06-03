@@ -19,10 +19,10 @@ const Nav = () => {
 
         {/* large screen links */}
         <div className="hidden md:flex space-x-6 text-md p-8">
-          <a href="#" onClick={toTournaments} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">tournaments</a>
-          <a href="#" onClick={toTeams} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">teams</a>
-          <a href="#" onClick={toPlayers} className="text-gray-800 hover:text-amber-600 font-kufi font-bold ">players</a>
-          <a href="#" onClick={toAlas} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">alas</a>
+          <a onClick={toTournaments} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">tournaments</a>
+          <a  onClick={toTeams} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">teams</a>
+          <a  onClick={toPlayers} className="text-gray-800 hover:text-amber-600 font-kufi font-bold ">players</a>
+          <a  onClick={toAlas} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">alas</a>
         </div>
 
         {/* Hamburger icon (small screens only) */}
