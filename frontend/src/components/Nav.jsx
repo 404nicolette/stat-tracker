@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toTournaments = () => navigate("/tournaments");
+  const toTeams = () => navigate("/teams");
+  const toPlayers = () => navigate("/players");
+  const toAlas = () => navigate("/alas");
+
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-14 bg-[#e4e4e4] border-b-2 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full h-24 bg-[#e4e4e4] border-b-2 shadow-md z-50">
       <div className="flex justify-between items-center h-full px-4">
         {/* Logo */}
         <h4 className="font-taruno text-xl">ace//</h4>
 
         {/* large screen links */}
-        <div className="hidden md:flex space-x-6 text-md">
-          <a href="#" className="text-gray-800 hover:text-red-800 font-kufi font-bold">Tournaments</a>
-          <a href="#" className="text-gray-800 hover:text-red-800 font-kufi font-bold">Teams</a>
-          <a href="#" className="text-gray-800 hover:text-red-800 font-kufi font-bold ">Players</a>
-          <a href="#" className="text-gray-800 hover:text-red-800 font-kufi font-bold">National Team</a>
+        <div className="hidden md:flex space-x-6 text-md p-8">
+          <a href="#" onClick={toTournaments} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">tournaments</a>
+          <a href="#" onClick={toTeams} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">teams</a>
+          <a href="#" onClick={toPlayers} className="text-gray-800 hover:text-amber-600 font-kufi font-bold ">players</a>
+          <a href="#" onClick={toAlas} className="text-gray-800 hover:text-amber-600 font-kufi font-bold">alas</a>
         </div>
 
         {/* Hamburger icon (small screens only) */}
@@ -30,10 +38,10 @@ const Nav = () => {
       {/* dropdown for mobile */}
       {open && (
         <div className="md:hidden absolute top-14 left-0 w-full bg-[#e4e4e4] shadow-lg p-4 flex flex-col ">
-          <a href="#" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-500 font-kufi p-4">Tournaments</a>
-          <a href="#" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-500 font-kufi p-4">Teams</a>
-          <a href="#" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-500 font-kufi p-4">Players</a>
-          <a href="#" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-500 font-kufi p-4">Alas</a>
+          <a href="/tournaments" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-600 font-kufi py-4 ">tournaments</a>
+          <a href="/teams" onClick={() => setOpen(false)} className="text-gray-800 hover:text-amber-600 font-kufi py-4">teams</a>
+          <a href="/players" onClick={() => setOpen(false)}  className="text-gray-800 hover:text-amber-600 font-kufi py-4">players</a>
+          <a href="/alas" onClick={() => setOpen(false)}  className="text-gray-800 hover:text-amber-600 font-kufi py-4">alas</a>
         </div>
       )}
     </nav>
