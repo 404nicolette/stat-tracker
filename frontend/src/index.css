@@ -32,3 +32,9 @@
     font-family: "Evermore", sans-serif;
   }
 }
+
+@layer components {
+  .card:nth-child(2) {
+    top: 20px;
+  }
+}

@@ -3,10 +3,7 @@ import React from "react";
 const VolleyballCourt = () => {
   return (
     <>
-
       <div className="flex flex-col items-center justify-center ">
-
-        
         <div className="border-4 h-98 w-56 absolute flex flex-col justify-between lg:w-[80vh] lg:h-68 lg:flex-row bg-[#e4e4e4]">
           {/* Left Text */}
           <div className="flex justify-center items-center h-[3rem] w-full lg:h-full lg:w-[3rem]">
