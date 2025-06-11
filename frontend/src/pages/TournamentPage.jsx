@@ -1,21 +1,25 @@
+
+import Noise from "../components/animation/Noise"
 import React from "react";
 import Orb from "../components/animation/Orb";
 import Nav from "../components/Nav";
 import PerTournament from "../components/tournaments/PerTournament";
 import { useNavigate } from "react-router-dom";
 
-const TournamentPage = () => {
+const MainPage = () => {
   const navigate = useNavigate();
   const toUAAP = () => navigate("/tournaments/uaap");
   const toSSL = () => navigate("/tournaments/ssl");
 
   return (
-    <div className=" w-full h-screen bg-[#e4e4e4] flex flex-col items-center justify-start">
+    <div className=" w-full h-screen flex flex-col items-center justify-start">
+      <Noise  className="h-auto w-full object-cover "/>
       <div className="w-full z-1">
         <Nav />
       </div>
+      
 
-      <div className="h-full w-full bg-[#e4e4e4] overflow-y-scroll">
+     <div className="h-full w-full overflow-y-scroll">
         <PerTournament
           tournamentNumber={"01"}
           hueNumber={61}
@@ -33,7 +37,10 @@ const TournamentPage = () => {
           tournamentNavigate={toSSL}
         />
       </div>
+     
+      
+
     </div>
   );
 };
-export default TournamentPage;
+export default MainPage;

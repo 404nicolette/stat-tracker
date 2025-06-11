@@ -18,18 +18,10 @@ const TeamsPage = () => {
           <h1 className="text-5xl border-b-2 w-screen p-12">TEAMS</h1>
 
           <div className="border-2 border-amber-600 w-screen h-screen grid grid-flow-row grid-rows-4 gap-2 overflow-y-scroll">
-            <TeamCard/>
-           
-
+            <TeamCard />
           </div>
-
-
-          
-
-          </div>
-
         </div>
-        
+      </div>
     </>
   );
 };

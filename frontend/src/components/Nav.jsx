@@ -12,79 +12,38 @@ const Nav = () => {
   const toAlas = () => navigate("/alas");
 
   return (
-    <nav className=" w-full h-24 bg-[#e4e4e4] border-b-2 shadow-md z-50">
-      <div className="flex justify-between items-center h-full px-4">
-        {/* Logo */}
-        <h4 onClick={toHome} className="font-taruno text-xl cursor-pointer lg:text-2xl">
-          ace//
-        </h4>
+    <div className="flex flex-col items-center justify-start">
+      <div className=" flex items-center justify-between border-b-2 border-red-700 w-[90%] p-8">
 
-        {/* large screen links */}
-        <div className="hidden md:flex space-x-6 text-md p-8">
-          <a onClick={toTournaments} className="text-gray-800 hover:text-red-600 font-kufi font-bold cursor-pointer lg:text-2xl">tournaments </a>
-          <a onClick={toTeams} className="text-gray-800 hover:text-red-600 font-kufi font-bold cursor-pointer lg:text-2xl">teams </a>
-          <a onClick={toPlayers} className="text-gray-800 hover:text-red-600 font-kufi font-bold cursor-pointer lg:text-2xl">players </a>
-          <a onClick={toAlas} className="text-gray-800 hover:text-red-600 font-kufi font-bold cursor-pointer lg:text-2xl">alas </a>
-            
-         
-         
-        </div>
-
-        {/* Hamburger icon (small screens only) */}
-        <div className="md:hidden">
-          <button onClick={() => setOpen(!open)} className="focus:outline-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1 3h14M1 8h14M1 13h14"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </button>
-        </div>
+      <div>
+        <a onClick={toHome} className=" text-red-700 font-unbounded cursor-pointer lg:text-2xl lg:justify-end ">THE ACE.{" "}</a>
+      </div>
+        
+      <div>
+        <a onClick={toTournaments} className=" text-red-700 font-unbounded cursor-pointer lg:mx-2 lg:text-2xl">TOURNAMENTS{" "}</a>
+        <a onClick={toTeams} className=" text-red-700 font-unbounded cursor-pointer lg:mx-2 lg:text-2xl">TEAMS{" "}</a>
+        <a onClick={toPlayers} className=" text-red-700 font-unbounded cursor-pointer lg:mx-2 lg:text-2xl">PLAYERS{" "}</a>
+        <a onClick={toAlas} className=" text-red-700 font-unbounded cursor-pointer lg:mx-2 lg:text-2xl">ALAS{" "}</a>
       </div>
 
-      {/* dropdown for mobile */}
-      {open && (
-        <div className="md:hidden absolute top-30 left-0 w-full bg-[#e4e4e4] shadow-lg p-4 flex flex-col ">
-          <a
-            href="/tournaments"
-            onClick={() => setOpen(false)}
-            className="text-gray-800 hover:text-red-600 font-kufi py-4 "
-          >
-            tournaments
-          </a>
-          <a
-            href="/teams"
-            onClick={() => setOpen(false)}
-            className="text-gray-800 hover:text-red-600 font-kufi py-4"
-          >
-            teams
-          </a>
-          <a
-            href="/players"
-            onClick={() => setOpen(false)}
-            className="text-gray-800 hover:text-red-600 font-kufi py-4"
-          >
-            players
-          </a>
-          <a
-            href="/alas"
-            onClick={() => setOpen(false)}
-            className="text-gray-800 hover:text-red-600 font-kufi py-4"
-          >
-            alas
-          </a>
+    </div>
+    
+   
+
+      {/* large screen links */}
+      {/* <div className="hidden lg:flex space-x-6 text-md p-8 border-b-2 w-[90%] z-50 border-red-700">
+        <a onClick={toHome} className=" text-red-700 font-unbounded cursor-pointer lg:text-xl lg:justify-end ">ACE{" "}</a>
+
+        <div className="flex space-x-6">
+          <a onClick={toTournaments} className=" text-red-700 font-unbounded cursor-pointer lg:text-xl">TOURNAMENTS{" "}</a>
+          <a onClick={toTeams} className=" text-red-700 font-unbounded cursor-pointer lg:text-xl">TEAMS{" "}</a>
+          <a onClick={toPlayers} className=" text-red-700 font-unbounded cursor-pointer lg:text-xl">PLAYERS{" "}</a>
+          <a onClick={toAlas} className=" text-red-700 font-unbounded cursor-pointer lg:text-xl">ALAS{" "}</a>
         </div>
-      )}
-    </nav>
+
+      </div> */}
+    </div>
+
   );
 };
 
