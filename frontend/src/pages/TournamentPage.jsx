@@ -2,7 +2,7 @@
 import Noise from "../components/animation/Noise"
 import React from "react";
 import Orb from "../components/animation/Orb";
-import Nav from "../components/Nav";
+import NavBar from "../components/NavBar";
 import PerTournament from "../components/tournaments/PerTournament";
 import { useNavigate } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const MainPage = () => {
     <div className=" w-full h-screen flex flex-col items-center justify-start">
       <Noise  className="h-auto w-full object-cover "/>
       <div className="w-full z-1">
-        <Nav />
+        <NavBar />
       </div>
       
 

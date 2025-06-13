@@ -12,7 +12,6 @@ const PerTournament = ({
 }) => {
   return (
     <div className="relative">
-      <Noise className="h-full w-full object-cover " />
         <div className="sticky top-0 flex h-screen items-center justify-center ">
           <div className="absolute left-0 right-0 h-[50vh] w-full px-8 flex flex-col items-end justify-end lg:px-14">
             <h2 className="text-[10rem] font-bold lg:text-[15rem] ">
@@ -22,7 +21,7 @@ const PerTournament = ({
         </div>
 
         <div
-          className={`sticky top-[px] flex h-[calc(100vh-96px)] items-center ${bgColour} ${borderColour} border-4  justify-center `}
+          className={`sticky top-[px] flex h-[calc(100vh-60px)] items-center ${bgColour} ${borderColour} border-4  justify-center `}
         >
           {/* bg */}
 
@@ -33,7 +32,7 @@ const PerTournament = ({
             >
               <Orb hoverIntensity={0.8} hue={hueNumber} />
             </div>
-            <h3 className="absolute inset-0 flex items-center justify-center text-[2rem]  text-white pointer-events-none">
+            <h3 className="absolute inset-0 flex items-center justify-center text-[2rem] font-unbounded text-white pointer-events-none">
               {tournamentName}
             </h3>
           </div>

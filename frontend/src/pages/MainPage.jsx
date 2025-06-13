@@ -1,27 +1,43 @@
 import React from "react";
-import VolleyballCourt from "../components/main/VolleyballCourt";
-import Nav from "../components/Nav";
+import NavBar from "../components/NavBar";
 import Noise from "../components/animation/Noise"
-import About from "../components/main/About";
+import PageTitle from "../components/main/PageTitle";
+import Particles from "../components/animation/Particles";
+import About from "../components/main/about";
+import Footer from "../components/main/Footer";
 
 const MainPage = () => {
   return (
-    <div className=" w-full h-screen flex flex-col items-center justify-start">
-      <Noise  className="h-auto w-full object-cover "/>
-      <div className="w-full z-1">
-        <Nav />
-      </div>
-      
+    <div className="relative w-full h-screen flex flex-col items-center justify-start ">
+      <Noise className="h-auto w-full object-cover" />
 
-      <div className="h-full w-full flex flex-col items-center justify-end p-4 ">
-        <p className="font-stretch-extra-expanded font-bold text-[17rem]">THE ACE.</p>
-        <div className="flex justify-end w-full">
-          <h6 className="font-humanist text-3xl -mt-20  pr-17">VOLLEYBALL STATISTICS TRACKER</h6>
+      <div className="w-full z-20">
+        <NavBar />
+      </div>
+
+
+      <div className="z-10 h-screen w-screen absolute overflow-y-scroll overflow-x-hidden border-2 border-amber-400">
+        <Particles
+          particleColors={['#ffffff', '#ffffff']}
+          particleCount={500}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={200}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 ">
+          <PageTitle />
+        </div>
+
+         <div className="border-2 border-amber-400">
+          <About />
         </div>
       </div>
 
-      <About/>
-
+     
+      <Footer/>
      
       
 

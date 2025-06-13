@@ -1,8 +1,8 @@
 import { useState } from "react";
-import MainPage from "./pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TournamentPage from "./pages/TournamentPage";
 import TeamsPage from "./pages/TeamsPage";
+import MainPage from "./pages/MainPage";
 function App() {
   return (
     <BrowserRouter>

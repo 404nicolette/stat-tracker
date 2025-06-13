@@ -3,3 +3,4 @@ npm install react-router-dom
 npm install @headlessui/react
 npm install react-router-dom@6
 npm i ogl
+npm install react-icons

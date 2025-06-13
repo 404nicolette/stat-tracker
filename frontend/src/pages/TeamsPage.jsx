@@ -1,17 +1,14 @@
 import React from "react";
 import TeamCard from "../components/teams/TeamCard";
-import dlsu from "../assets/team-icons/dlsu.svg";
-import nu from "../assets/team-icons/nu.svg";
-import ust from "../assets/team-icons/ust.svg";
 
-import Nav from "../components/Nav";
+import NavBar from "../components/NavBar";
 
 const TeamsPage = () => {
   return (
     <>
       <div className=" w-full  bg-[#e4e4e4] flex flex-col items-center justify-start ">
         <div className="w-full z-1">
-          <Nav />
+          <NavBar />
         </div>
 
         <div className="h-[calc(100vh-96px)]  w-full overflow-y-scroll overflow-x-hidden items-center justify-start flex flex-col ">
