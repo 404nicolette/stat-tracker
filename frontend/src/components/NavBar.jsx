@@ -17,7 +17,7 @@ function NavBar() {
         {/*mobile only*/}
         <button
           onClick={toggleLinks}
-          className="text-red-700 text-xl md:hidden"
+          className="text-red-700 md:hidden"
         >
           <FaBars />
         </button>
