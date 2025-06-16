@@ -9,17 +9,22 @@ const TeamsPage = () => {
         <div className="w-full z-1">
           <NavBar />
         </div>
-        
-        <div className="border-2 border-amber-600 w-screen h-screen place-items-center grid grid-cols-2 -gap-2 overflow-y-scroll">
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
-          <Team borderColour={"border-[#157520]"} schoolNameTop={"LADY"} schoolNameBottom={"SPIKERS"} />
+
+        <div className="flex flex-col items-center justify-center  ">
+
+          <h1 className="font-stretch-expanded text-4xl font-semibold mt-8">[ TEAMS ]</h1>
+          <div className="grid grid-cols-2 gap-8 p-10 overflow-y-scroll sm:grid-cols-4 ">
+            <Team schoolName={"LADY SPIKERS"}  />
+            <Team schoolName={"LADY BULLDOGS"}  />
+            <Team schoolName={"GOLDEN TIGRESSES"}  />
+            <Team schoolName={"LADY TAMARRAWS"}  />
+            <Team schoolName={"LADY FALCONS"}  />
+            <Team schoolName={"FIGHTING MAROONS"}  />
+            <Team schoolName={"BLUE EAGLES"}  />
+            <Team schoolName={"LADY RED WARRIORS"}  />
+          </div>
         </div>
+        
       </div>
     </>
   );

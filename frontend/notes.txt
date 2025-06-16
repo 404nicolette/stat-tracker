@@ -4,3 +4,5 @@ npm install @headlessui/react
 npm install react-router-dom@6
 npm i ogl
 npm install react-icons
+npm i framer-motion
+npm install react-parallax-tilt
