@@ -17,6 +17,7 @@ const PerTournament = ({
             <h2 className="text-[10rem] font-bold lg:text-[15rem] ">
               {tournamentNumber}
             </h2>
+            
           </div>
         </div>
 

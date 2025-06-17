@@ -4,6 +4,7 @@ import TournamentPage from "./pages/TournamentPage";
 import TeamsPage from "./pages/TeamsPage";
 import MainPage from "./pages/MainPage";
 import Team from "./components/teams/Team";
+import PlayersPage from "./pages/PlayersPage";
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,8 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/tournaments" element={<TournamentPage />} />
         <Route path="/teams" element={<TeamsPage />} />
+        <Route path="/players" element={<PlayersPage />} />
+
         <Route path="/test" element={<Team />} />
 
       </Routes>

@@ -16,7 +16,7 @@ const MainPage = () => {
       </div>
 
 
-      <div className="z-10 h-screen w-screen absolute overflow-y-scroll overflow-x-hidden border-2 border-amber-400">
+      <div className="z-10 h-screen w-screen absolute overflow-y-scroll overflow-x-hidden">
         <Particles
           particleColors={['#ffffff', '#ffffff']}
           particleCount={500}
@@ -31,7 +31,7 @@ const MainPage = () => {
           <PageTitle />
         </div>
 
-         <div className="border-2 border-amber-400">
+         <div >
           <About />
         </div>
       </div>
