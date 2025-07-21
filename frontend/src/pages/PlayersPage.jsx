@@ -44,23 +44,46 @@ function PlayersPage() {
         </section>
         <br/>
 
-        <main className='border-1 rounded-md h-auto w-[90%] lg:w-[80%]'>
-          <table className='font-stretch-expanded'>
-            <tr className='font-extrabold text-sm mb-2'>
-              <td>PLAYER</td>
-              <td>TEAM</td>
-              <td>POSITION</td>
-            </tr>
+       <main className='h-auto w-[90%] md:w-auto lg:w-[70%]'>
+        <div className='flex items-center jus w-full p-5 rounded-lg bg-[#bdb8b857] border-2 border-red-700 '>
 
-            <tbody className='text-md'>
-              <td>ANGEL CANINO</td>
-              <td>LADY SPIKERS/ ALAS</td>
-               <td>OUTSIDE HITTER/ OPPOSITE HITTER</td>
+          {/* PLAYER COLUMN */}
+          <table className='font-stretch-expanded w-[50%] text-left lg:w-[70%] border-r-1 lg:border-r-0 '>
+            <thead className='font-bold text-sm w-[20%]'>
+              <tr>
+                <th >PLAYER</th>
+              </tr>
+            </thead>
+            <tbody className='text-[0.6rem] md:text-[0.7rem]'>
+              <tr>
+                <td className='py-2'>ANGEL CANINO</td>
+              </tr>
             </tbody>
           </table>
-         
 
-        </main>
+          {/* TEAM + POSITION */}
+          <div className='overflow-x-auto w-full'>
+            <table className='font-stretch-expanded text-left lg:w-full  '>
+              <thead className='font-bold text-sm w-[20%]'>
+                <tr>
+                  <th className='px-4'>TEAM</th>
+                  <th className='pr-4'>POSITION</th>
+                </tr>
+              </thead>
+              <tbody className='text-[0.6rem] md:text-[0.7rem] whitespace-nowrap'>
+                <tr>
+                  <td className='py-2 px-4'>
+                    LADY SPIKERS + ALAS
+                  </td>
+                  <td className='py-2  pr-4'>
+                    OUTSIDE HITTER + OPPOSITE HITTER
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
       </div>
     </>
   )
