@@ -1,56 +1,66 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import PerSurname from '../components/players/PerSurname'
+import SearchBar from '../components/players/SearchBar'
+import DropDown from "../components/players/DropDown"
 
 function PlayersPage() {
+  const teamName = ["LADY SPIKERS", "LADY BULLDOGS", "GOLDEN TIGRESSES", "LADY TAMARRAWS", "LADY FALCONS", "FIGHTING MAROONS", "BLUE EAGLES", "LADY RED WARRIORS", "ALAS"]
+  const playerPosition = ["SETTER", "LIBERO", "MIDDLE BLOCKER", "OPPOSITE HITTER","OUTSIDE HITTER"]
+  const alpha = Array.from(Array(26)).map((e,i) =>i + 65)
+  const playerName = alpha.map((x)=> String.fromCharCode(x))
   return (
     <>
       <div className="  w-full  bg-[#e4e4e4] flex flex-col items-center justify-start overflow-hidden">
-        <div className="w-full z-1">
+        <nav className="w-full z-1">
           <NavBar />
-        </div>
+        </nav>
 
-        <div className="flex w-full h-full justify-center items-center md:flex-row">
-          <div className='h-[calc(100vh-60px)] w-full flex flex-col md:flex-row  '>
-
-            <div className='bg-[#600606] h-[50%] w-[100%] rounded-b-[2rem] md:rounded-b-none md:rounded-tr-[5rem] md:rounded-br-[5rem] box-shadow md:w-[50%] md:h-[100%]'>
-              <div className='flex flex-col justify-end items-start h-full p-8'>
-                <h1 className=' text-[#e4e4e4] font-vibrant text-[3rem] md:text-[5rem]'>PLAYERS</h1>
-              </div>
-            </div>
-
-            <div className='grid grid-cols-4 gap-2 place-items-center sm:grid-cols-4 h-[50%] overflow-y-scroll md:w-[50%] md:h-[100%] md:p-10'>
-              <PerSurname startingLetter={"a"}/>
-              <PerSurname startingLetter={"b"}/>
-              <PerSurname startingLetter={"c"}/>
-              <PerSurname startingLetter={"d"}/>
-              <PerSurname startingLetter={"e"}/>
-              <PerSurname startingLetter={"f"}/>              
-              <PerSurname startingLetter={"g"}/>
-              <PerSurname startingLetter={"h"}/>
-              <PerSurname startingLetter={"i"}/>
-              <PerSurname startingLetter={"j"}/>
-              <PerSurname startingLetter={"k"}/>
-              <PerSurname startingLetter={"l"}/>
-              <PerSurname startingLetter={"m"}/>
-              <PerSurname startingLetter={"n"}/>              
-              <PerSurname startingLetter={"o"}/>
-              <PerSurname startingLetter={"p"}/>
-              <PerSurname startingLetter={"q"}/>
-              <PerSurname startingLetter={"r"}/>
-              <PerSurname startingLetter={"s"}/>
-              <PerSurname startingLetter={"t"}/>
-              <PerSurname startingLetter={"u"}/>
-              <PerSurname startingLetter={"v"}/>              
-              <PerSurname startingLetter={"w"}/>
-              <PerSurname startingLetter={"x"}/>
-              <PerSurname startingLetter={"y"}/>
-              <PerSurname startingLetter={"z"}/>
-
-            </div>
-            
+        <br/>
+        <section className='w-full flex flex-col lg:flex-row lg:p-0 items-center justify-center '>
+          <div className='pt-2 lg:pb-2 lg:pr-3 lg:w-[30%] w-[60%]'>
+            <SearchBar/>
           </div>
-        </div>
+          
+
+          <div className='flex w-auto py-3 lg:py-0 overflow-x-scroll gap-x-1.5 px-2 lg:items-center lg:justify-center '>
+            <DropDown
+              label="ALL TEAMS"
+              options={teamName}
+              onChange={(e) => setSelectedPosition(e.target.value)}
+            />
+
+             <DropDown
+              label="ALL POSITION"
+              options={playerPosition}
+              onChange={(e) => setSelectedPosition(e.target.value)}
+            />
+
+            <DropDown
+              label="ALL PLAYERS"
+              options={playerName}
+              onChange={(e) => setSelectedPosition(e.target.value)}
+            />
+          </div>
+        </section>
+        <br/>
+
+        <main className='border-1 rounded-md h-auto w-[90%] lg:w-[80%]'>
+          <table className='font-stretch-expanded'>
+            <tr className='font-extrabold text-sm mb-2'>
+              <td>PLAYER</td>
+              <td>TEAM</td>
+              <td>POSITION</td>
+            </tr>
+
+            <tbody className='text-md'>
+              <td>ANGEL CANINO</td>
+              <td>LADY SPIKERS/ ALAS</td>
+               <td>OUTSIDE HITTER/ OPPOSITE HITTER</td>
+            </tbody>
+          </table>
+         
+
+        </main>
       </div>
     </>
   )
