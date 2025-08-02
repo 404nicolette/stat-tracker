@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../components/NavBar';
-import spadeImg from "../assets/icons/spade.svg"
+import Card from '../components/alas/Card';
+import Text from '../components/text/Text';
 function AlasPage() {
   return (
     <>
@@ -9,19 +10,16 @@ function AlasPage() {
           <NavBar />
         </nav>
 
-        <main className="flex flex-col items-center justify-center  border-3 h-screen w-full">
-
-          <div className='h-[30%] md:h-[40%]'>
-            <img
-              className='h-full'
-              src={spadeImg}
-              alst="Spade Icon"/>
+        <main className="h-screen w-full flex flex-col items-center justify-start p-5 bg-[#e4e4e4]">
+         
+          <div className='h-[65%] lg:h-[55%] w-full  bg-[#092947] flex items-end p-5'>
+            <Text.Unbounded className='text-5xl text-[#FFF100]'>ALAS PILIPINAS</Text.Unbounded>
           </div>
-
-          <div className=' text-center'>
-            <h1 className='font-unbounded font-bold  text-[2rem] md:text-[3rem]'>ALAS</h1>
+          <div className='border-3 w-full'>
             
           </div>
+
+          
           
 
           
